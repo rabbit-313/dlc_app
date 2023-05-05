@@ -4,5 +4,5 @@ from.import views
 
 app_name='intro'
 urlpatterns=[
-    path('',views.IndexView.as_view())
+    path('',views.index, name="intro"),
 ]
