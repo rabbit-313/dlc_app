@@ -10,10 +10,12 @@ from django.views import generic
 
 class IndexView(generic.TemplateView):
     template_name="index.html"
-class INTRODUCINGView(generic.TemplateView):
-    template_name="introducing.html"
-class PROPOSINGGENREView(generic.TemplateView):
-    template_name="proposing.html"
-class MEMBERSHIPSYSTEMView(generic.TemplateView):
-    template_name="membership.html"
+    
+class IndexView(generic.TemplateView):
+    template_name="introduce.html"
+    
+class IndexView(generic.TemplateView):
+    template_name="propose.html"
+class IndexView(generic.TemplateView):
+    template_name="menbership.html"
 
