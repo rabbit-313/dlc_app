@@ -1,11 +1,76 @@
-<!DOCTYPE html>
- 
-<html lang="ja">
-<head>
-    <meta charset="utf-8" />
-    <title>test</title>
-</head>
-<body>
-    パラメータ1つ目:{{ sample }}<br />
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Web上にあなた専用の日記ページを保存できるサービス |DLC{% endblock %}
+
+{% block header%}
+<header class="masthead text-center text-white">
+  <div class="masthead-content">
+    <div class="container">
+      <h1 class="masthead-heading mb-0">DLC</h1>
+      <h2 class="masthead-subheading mb-0">サークル紹介サイト</h2>
+      <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">LOG IN</a>
+    </div>
+  </div>
+  <div class="bg-circle-1 bg-circle"></div>
+  <div class="bg-circle-2 bg-circle"></div>
+  <div class="bg-circle-3 bg-circle"></div>
+  <div class="bg-circle-4 bg-circle"></div>
+</header>
+{% endblock %}
+
+{% block contents %}
+<section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-lg-2">
+        <div class="p-5">
+          <img class="img-fluid rounded-circle" src="{% static 'assets/img/2nd.jpg' %}" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <div class="p-5">
+          <h2 class="display-4">サークル紹介ページ</h2>
+          <p>DLCについて詳しく紹介</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="p-5">
+          <img class="img-fluid rounded-circle" src="{% static 'assets/img/1st.jpg' %}" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="p-5">
+          <h2 class="display-4">ダンスのジャンル適正</h2>
+          <p>あなたの好みからジャンルを提案</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-lg-2">
+        <div class="p-5">
+          <img class="img-fluid rounded-circle" src="{% static 'assets/img/3rd.jpg' %}" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <div class="p-5">
+          <h2 class="display-4">Membership System</h2>
+          <p>サークル会員用サイト</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
