@@ -33,13 +33,13 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link {% block active_intro:introducing %}{% endblock %}" href="{% url 'intro:introducing' %}">INTRODUCING</a>
+                <a class="nav-link {% block active_introduce %}{% endblock %}" href="{% url 'MainApp:introduce' %}">INTRODUCING</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {% block active_proposing %}{% endblock %}" href="{% url 'intro:proposing' %}">PROPOSING GENRE</a>
+                <a class="nav-link {% block active_propose_genre %}{% endblock %}" href="{% url 'MainApp:propose' %}">PROPOSING GENRE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {% block active_membership %}{% endblock %}" href="{% url 'intro:membership' %}">MEMBERSHIP SYSTEM</a>
+                <a class="nav-link {% block active_membership_system %}{% endblock %}" href="{% url 'MainApp:membership' %}">MEMBERSHIP SYSTEM</a>
               </li>
             </ul>
 
