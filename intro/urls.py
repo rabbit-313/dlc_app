@@ -5,7 +5,7 @@ from.import views
 app_name='intro'
 urlpatterns=[
     path('',views.IndexView.as_view(), name="index"),
-    path('INTRODUCING/',views.IndexView.as_view(), name="INTRODUCING"),
-    path('PROPOSING GENRE/',views.IndexView.as_view(), name="PROPOSING GENRE"),
-    path('MEMBERSHIP SYSTEM/',views.IndexView.as_view(), name="MEMBERSHIP SYSTEM"),
+    path('introducing/',views.INTRODUCINGView.as_view(), name="introducing"),
+    path('proposing/',views.PROPOSINGGENREView.as_view(), name="proposing"),
+    path('membership/',views.MEMBERSHIPSYSTEMView.as_view(), name="membership"),
 ]
