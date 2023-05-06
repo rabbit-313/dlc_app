@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.env.osx": {
+      "DB_PASSWORD": "Raivc0329",
+      "DB_USER": "postgres"
+    }
+  }
+  
