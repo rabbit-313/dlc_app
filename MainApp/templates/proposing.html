@@ -9,22 +9,25 @@
 		<ul>
 			<li>Hiphop</li>
 			<li>Break</li>
-			<li>POP</li>
+			<li>Pop</li>
 			<li>Girlshiphop</li>
 			<li>Jazz</li>
 			<li>House</li>
 			<li>Lock</li>
 			<li>Punking</li>
 		</ul>
-		<p>簡単な質問に答えると、ChatGPTがあなたの好みに合ったジャンルをいくつか提案します。</p>
+		<p>好きな音楽やスポーツなど、あなたの好みや特徴に合ったジャンルを提案します。</p>
 		<p>きっと、あなたにぴったりのジャンルが見つかるはずです。</p>
-		<form method="post" action="#">
-			<button type="submit">ジャンル提案</button>
+		<p>※回答まで10秒ほどかかります。送信ボタンを押しましたら、しばらくお待ちください</p>
+		<form method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			{{ form.as_p }}
+			<button type="submit" name="file">送信</button>
 		</form>
-
-
 	</div>
 </div>
 
-		
 {% endblock %}
+
+
+
