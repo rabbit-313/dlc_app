@@ -1,32 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Dance Genre Recommendation</title>
-</head>
-<body>
-	<header>
-		<h1>Dance Genre Recommendation</h1>
-	</header>
-	<main>
+{% extends 'base.html' %}
+{% block title %}ジャンル提案！{% endblock %}
+{% block active_proposing %}active{% endblock %}
+{% block contents %}
+<div class="container">
+	<div class="my-div-style">
 		<p>あなたの好みに合ったダンスのジャンルを提案します。</p>
 		<h2>ジャンルリスト</h2>
 		<ul>
-			<li>Hiphop(ヒップホップ)</li>
-			<li>Break Dance</li>
-			<li>バレエ</li>
-			<li>タップダンス</li>
-			<li>モダンダンス</li>
-			<li>フラメンコ</li>
-			<li>ベリーダンス</li>
-			<li>ラテンダンス</li>
+			<li>Hiphop</li>
+			<li>Break</li>
+			<li>POP</li>
+			<li>Girlshiphop</li>
+			<li>Jazz</li>
+			<li>House</li>
+			<li>Lock</li>
+			<li>Punking</li>
 		</ul>
-		<p>上記のリストから好きなジャンルを選んで、踊ってみてください。</p>
+		<p>簡単な質問に答えると、ChatGPTがあなたの好みに合ったジャンルをいくつか提案します。</p>
 		<p>きっと、あなたにぴったりのジャンルが見つかるはずです。</p>
-	</main>
-	<footer>
-		<p>&copy; Dance Genre Recommendation</p>
-	</footer>
-</body>
-</html>
+		<form method="post" action="#">
+			<button type="submit">ジャンル提案</button>
+		</form>
+	</div>
+</div>
+
+		
+{% endblock %}

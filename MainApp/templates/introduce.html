@@ -1,29 +1,51 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>サークル紹介</title>
-  <meta charset="utf-8">
-</head>
-<body>
-  <h1>サークル紹介</h1>
-  <p>こんにちは、私たちは〇〇サークルです。</p>
-  <h2>サークルの活動内容</h2>
-  <p>私たちは〇〇をテーマにして活動しています。</p>
-  <h2>メンバー紹介</h2>
-  <ul>
-    <li>代表：山田太郎</li>
-    <li>副代表：佐藤花子</li>
-    <li>会計：鈴木次郎</li>
-    <li>広報：田中三郎</li>
-  </ul>
-  <h2>活動実績</h2>
-  <ul>
-    <li>〇〇コンテストで入賞</li>
-    <li>地域イベントでパフォーマンスを行う</li>
-    <li>学内イベントでブースを出展</li>
-  </ul>
-  <h2>お問い合わせ先</h2>
-  <p>お問い合わせは以下のアドレスまでお願いします。</p>
-  <p>メールアドレス：〇〇@example.com</p>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}サークル紹介！{% endblock %}
+{% block active_introduce %}active{% endblock %}
+
+{% block contents %}
+  <div class="container my-div-style">
+    <h2>活動内容</h2>
+        <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>日程</th>
+            <th>内容</th>
+          </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <td>月曜日 17-21時</td>
+              <td>通常練習</td>
+            </tr>
+            <tr>
+              <td>木曜日 17-21時</td>
+              <td>通常練習</td>
+            </tr>
+            <tr>
+              <td>土曜日 13-17時</td>
+              <td>通常練習</td>
+            </tr>
+            <tr>
+              <td>2月末~4月初旬</td>
+              <td>新歓期：新歓パフォーマンスに向けて集中練習</td>
+            </tr>
+            <tr>
+              <td>8月末~11月中旬</td>
+              <td>公演期：卒業公演に向けて集中練習</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>メンバー</h2>
+        <ul>
+          <li>19代 : 22名</li>
+          <li>20代 : 20名</li>
+          <li>21代 : 37名</li>
+          <li>代表：菅原貴葵</li>
+        </ul>
+        <h2>お問い合わせ先</h2>
+        <p>お問い合わせは以下のアドレスまでお願いします。</p>
+        <p>メールアドレス：〇〇@example.com</p>
+  </div>
+{% endblock %}
